@@ -1,0 +1,22 @@
+public class Lab1 {
+	/**
+	 * Takes an integer and calculates the next integer in the Collatz mathematica
+	 * sequence
+	 */
+	public static int collatz(int n) {
+		double check = n % 2;
+		if (n < 0) {
+			int collatz = -1;
+			return collatz;
+		}
+		if (check > 0) {
+			int collatz = 3*n + 1;
+		return collatz;
+		}
+		if (check ==0) {
+			int collatz = n/2;
+			return collatz;
+		}
+	
+		return 1;
+	}
